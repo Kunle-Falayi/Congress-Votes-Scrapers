@@ -1,4 +1,4 @@
-# Congress votes scraper
+# Congress votes scrapers
 There are two scrapers in this repo <br>
 [The first one](https://github.com/Kunle-Falayi/congress_votes_scraper/blob/main/118thSession1stSessionVotes_Scraper.ipynb) scrapes all the votes per each congressmember. It gets the congressmembers' names, parties, vote cast, etc. 
 [The second one](https://github.com/Kunle-Falayi/congress_votes_scraper/blob/main/108thCongressVoteLatestAction.ipynb) gets the title of each roll vote and the latest action which is found on the page the url embedded in the bill number leads to. For instance, open https://clerk.house.gov/Votes/2023100, then click the bill number, it opens another page with a different html structure. That page contains the progress of the bill. <br>
