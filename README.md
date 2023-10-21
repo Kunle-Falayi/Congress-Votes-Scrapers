@@ -12,3 +12,6 @@ the base url  "https://clerk.house.gov/Votes" + "year" + "roll call number" = ht
 This makes it easy to iterate from the first roll call number to the last. And since the structure of the vote pages have not changed through the years, it is even easier to iterate throw multiple years and scrape all at the same time. But I advice scraping individual session/year to make it easier to catch errors.<br>
 <br>
 Once the two scrapers complete its work, join both data.
+
+## Published
+[This story](https://www.azcentral.com/story/news/politics/arizona/2023/06/05/ann-kirkpatrick-voted-by-proxy-more-than-any-lled-arizonas-delegation-117th-congress-in-proxy-voting/70150021007/) was done from the result of these scrapers and analysis that followed.
