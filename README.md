@@ -1,9 +1,10 @@
 # Congress votes scrapers
 There are two scrapers in this repo <br>
 [The first one](https://github.com/Kunle-Falayi/Congress-Votes-Scrapers/blob/main/117thSessionVotes_Scraper.ipynb) scrapes all the votes per each congressmember. It gets the congressmembers' names, parties, vote cast, etc. 
-[The second one](https://github.com/Kunle-Falayi/congress_votes_scraper/blob/main/117thCongressVoteLatestAction.ipynb) gets the title of each roll vote and the latest action which is found on the page the url embedded in the bill number leads to. For instance, open https://clerk.house.gov/Votes/2022100, then click the bill number, it opens another page with a different html structure. That page contains the progress of the bill. <br>
+[The second one](https://github.com/Kunle-Falayi/Congress-Votes-Scrapers/blob/main/117thCongressVoteLatestAction.ipynb) gets the title of each roll vote and the latest action which is found on the page the url embedded in the bill number leads to. For instance, open https://clerk.house.gov/Votes/2022100, then click the bill number, it opens another page with a different html structure. That page contains the progress of the bill. <br>
 <br>
-Unlike the first scraper where BeautifulSoup is used to get the actual votes for each roll call, the pages we are targetting for the latest actions load contents with JavaScript, which is why Selenium is used here. In the first few cells, Selenium dependecies are loaded and Chrome driver installed. <br>
+[The third] scrapes proxy votes which are loaded in a different way. They are in PDFs. These pdfs can be accessed through the url embedded in "Remote Voting By Proxy" on each roll call page.
+Unlike the first scraper where BeautifulSoup is used to get the actual votes for each roll call, the pages we are targetting for the latest actions  in the second scraper load contents with JavaScript, which is why Selenium is used here. In the first few cells, Selenium dependecies are loaded and Chrome driver installed. <br>
 <br>
 Before building the main scraper code, check the number of roll call votes for each session of the congress. In this case, it is the 108th Congress, which ran from 2021 and 2022. <br>
 The 2003 session had 678 roll call votes. Luckily, the url for each roll call vote is structured thus: <br>
